@@ -1,0 +1,24 @@
+{
+  "starter_pack_1": {
+    "name": "Starter Pack",
+    "price_usd": 0.99,
+    "contents": {
+      "gems": 100,
+      "coins": 5000
+    }
+  },
+  "gem_bundle_1": {
+    "name": "Handful of Gems",
+    "price_usd": 4.99,
+    "contents": {
+      "gems": 550
+    }
+  },
+  "gem_bundle_2": {
+    "name": "Pile of Gems",
+    "price_usd": 9.99,
+    "contents": {
+      "gems": 1200
+    }
+  }
+}
