@@ -35,14 +35,14 @@ public class DataManager : MonoBehaviour
 
     /// <summary>
     /// Loads all JSON data from the specified data path.
-    /// In a real Unity project, these files would be in the "Resources" folder
-    /// or loaded via Addressables. For this conversion, we simulate loading from a path.
+    /// Note: For a production game, it's better to place data in a "Resources"
+    /// folder and load via `Resources.Load` or use Addressables. This direct file
+    /// access is suitable for editor testing.
     /// </summary>
     private void LoadAllData()
     {
-        // In a real Unity project, you would use Application.dataPath + "/Data"
-        // or load from Resources. We are using a relative path for this environment.
-        string dataPath = "unity_project/Assets/Data";
+        // Application.dataPath points to the Assets folder in the Unity Editor.
+        string dataPath = Path.Combine(Application.dataPath, "Data");
 
         LoadData<BoardData>(Path.Combine(dataPath, "boards.json"), AllBoardData);
         LoadData<Chest>(Path.Combine(dataPath, "chests.json"), AllChestData);

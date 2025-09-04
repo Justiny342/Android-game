@@ -27,22 +27,25 @@ Follow these steps to get the project running in the Unity Editor:
     *   Create another empty GameObject and name it `GameManager`.
     *   Add the `GameManager` script to the `GameManager` GameObject.
 
-5.  **Set Up a Simple UI:**
+5.  **Set Up the UI:**
     *   In the Hierarchy, right-click and go to `UI > Canvas` to create a UI canvas.
-    *   Right-click the `Canvas` and go to `UI > Button - TextMeshPro` to create a button. Name it `MoveButton` and change its text to "Move".
-    *   Duplicate the button and name the new one `SummonButton`. Change its text to "Summon Companion".
-    *   Create an empty GameObject and name it `UIController`.
-    *   Add the `GameUI` script to the `UIController` GameObject.
+    *   Create an empty GameObject as a child of the Canvas and name it `UIController`. Add the `GameUI` script to this GameObject.
+    *   Create the following UI elements as children of the `Canvas`:
+        *   **Text (Legacy):** Create several Text elements for stats (`CoinsText`, `GemsText`, `EnergyText`, `LumberText`, `StoneText`).
+        *   **Text (Legacy):** Create a larger Text element for game messages (`GameMessageText`).
+        *   **Text (Legacy):** Create another Text element for the companion list (`CompanionListText`).
+        *   **Button (Legacy):** Create two buttons, `MoveButton` and `SummonButton`.
+    *   **Note:** You can use TextMeshPro instead of legacy Text for better quality, but you will need to change the variable types in `GameUI.cs` from `Text` to `TextMeshProUGUI` and add `using TMPro;`.
 
 6.  **Connect the UI to the Logic:**
-    *   Select the `UIController` GameObject. In the Inspector, you will see two fields in the `GameUI` script: `Move Button` and `Summon Button`.
-    *   Drag the `MoveButton` GameObject from the Hierarchy into the `Move Button` slot.
-    *   Drag the `SummonButton` GameObject from the Hierarchy into the `Summon Button` slot. The `GameUI` script will automatically handle the button clicks.
+    *   Select the `UIController` GameObject.
+    *   In the Inspector, you will see many empty fields on the `GameUI` script.
+    *   Drag each of the `Text` and `Button` GameObjects you created from the Hierarchy into the corresponding slot in the `GameUI` script component.
 
 7.  **Run the Game:**
     *   Press the "Play" button in the Unity Editor.
-    *   Open the Console window (`Window > General > Console`) to see the game's output.
-    *   Click the "Move" and "Summon Companion" buttons to interact with the game. You will see `Debug.Log` messages in the console reflecting the game's state changes.
+    *   The UI Text elements should now update automatically as you play.
+    *   Click the "Move" and "Summon Companion" buttons to interact with the game. Watch the stats and messages change in your UI.
 
 ## Next Steps
 

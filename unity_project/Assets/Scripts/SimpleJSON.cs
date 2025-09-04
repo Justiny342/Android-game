@@ -1186,7 +1186,6 @@ namespace SimpleJSON
         public JSONBool(bool aData)
         {
             m_Data = aData;
-.
         }
 
         public JSONBool(string aData)
