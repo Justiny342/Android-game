@@ -1,0 +1,20 @@
+{
+  "wooden": {
+    "name": "Wooden Chest",
+    "rewards": [
+      {"type": "coins", "amount": 50},
+      {"type": "coins", "amount": 75},
+      {"type": "lumber", "amount": 5},
+      {"type": "stone", "amount": 5}
+    ]
+  },
+  "golden": {
+    "name": "Golden Chest",
+    "rewards": [
+      {"type": "coins", "amount": 250},
+      {"type": "lumber", "amount": 20},
+      {"type": "stone", "amount": 20},
+      {"type": "sticker_pack", "pack_id": "basic_pack"}
+    ]
+  }
+}
