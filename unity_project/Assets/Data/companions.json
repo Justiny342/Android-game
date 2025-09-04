@@ -1,0 +1,34 @@
+{
+  "c001": {
+    "name": "Sparkle Squirrel",
+    "rarity": "Common",
+    "bonus": {
+      "type": "coins_from_nodes",
+      "value": 0.10
+    }
+  },
+  "c002": {
+    "name": "Glimmer Golem",
+    "rarity": "Rare",
+    "bonus": {
+      "type": "extra_lumber_chance",
+      "value": 0.15
+    }
+  },
+  "c003": {
+    "name": "Shadow Cat",
+    "rarity": "Epic",
+    "bonus": {
+      "type": "energy_recharge_rate",
+      "value": 0.05
+    }
+  },
+  "c004": {
+    "name": "Solar Phoenix",
+    "rarity": "Legendary",
+    "bonus": {
+      "type": "double_reward_chance",
+      "value": 0.02
+    }
+  }
+}

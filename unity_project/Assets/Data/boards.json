@@ -1,0 +1,11 @@
+{
+  "whispering_forest": {
+    "name": "Whispering Forest",
+    "nodes": [
+      {"type": "resource", "resource": "coins", "amount": 100},
+      {"type": "resource", "resource": "lumber", "amount": 10},
+      {"type": "mini_game", "game": "memory", "reward": {"type": "coins", "amount": 200}},
+      {"type": "treasure_chest", "tier": "wooden"}
+    ]
+  }
+}
